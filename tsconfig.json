@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "keyofStringsOnly": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "esnext",
+    "lib": [ "es6", "dom", "es2017", "es2019"],
+    "target": "es5",
+    "allowJs": true,
+    "jsx": "react",
+    "noUnusedLocals": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
+  },
+}
