@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-import "../styles/App.less";
+import styles from "../styles/App.less";
 import { Header } from "./Header/index";
 
 class App extends Component {
     render() {
+        debugger;
         return (
             <div>
-                <Header title={"Text example"}/>
+                <Header className={styles.header} title={"Text example"}/>
             </div>
         )
     }
