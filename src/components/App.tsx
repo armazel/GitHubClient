@@ -4,7 +4,6 @@ import { Header } from "./Header/index";
 
 class App extends Component {
     render() {
-        debugger;
         return (
             <div>
                 <Header className={styles.header} title={"Text example"}/>
