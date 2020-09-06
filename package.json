@@ -22,9 +22,11 @@
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
+    "@teamthread/strict-css-modules-loader": "0.0.3",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "@typescript-eslint/parser": "^2.31.0",
     "babel-loader": "^8.1.0",
+    "css-loader": "^0.28.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-loader": "^4.0.2",
@@ -32,8 +34,10 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0",
-    "less-loader": "^6.0.0",
+    "less": "^3.12.2",
+    "less-loader": "^6.2.0",
     "source-map-loader": "^0.2.4",
+    "style-loader": "^1.2.1",
     "ts-loader": "^7.0.2",
     "typescript": "^3.8.3",
     "webpack": "^4.43.0",
@@ -41,12 +45,10 @@
   },
   "dependencies": {
     "@types/react": "^16.9.34",
-    "css-loader": "^3.5.3",
+    "autoprefixer": "^9.8.6",
     "html-webpack-plugin": "^4.3.0",
-    "less": "^3.11.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "style-loader": "^1.2.1",
     "webpack-dev-server": "^3.10.3"
   }
 }
