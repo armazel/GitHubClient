@@ -5,7 +5,11 @@ module.exports = {
     entry: "./src/index.js",
     output: {
         path: path.join(__dirname, "dist"),
-        filename: "index_bundle.js"
+        filename: "index_bundle.js",
+        publicPath: '/'
+    },
+    devServer: {
+        historyApiFallback: true,
     },
     module: {
         rules: [
@@ -22,9 +26,9 @@ module.exports = {
                 exclude: /node_modules/,
             },
             {
-                test: /\.js$/,
+                test: /\.ts$/,
                 exclude: /node_modules/,
-                loader: 'eslint-loader',
+                loader: 'tslint-loader',
                 options: {
                     fix: true,
                     emitError: true,
