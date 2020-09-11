@@ -1,15 +1,16 @@
-import React, { Component } from "react";
-import styles from "../styles/App.less";
-import { Header } from "./Header/index";
+import * as React from "react";
+import * as styles from "../styles/App.less";
+import { BrowserRouter } from "react-router-dom";
+import { useRoutes } from "../routers/router";
 
-class App extends Component {
-    render() {
-        return (
-            <div>
-                <Header className={styles.header} title={"Text example"}/>
+const App: React.FC = () => {
+    return (
+        <BrowserRouter>
+            <div className={styles.wrapper}>
+                {useRoutes(false)}
             </div>
-        )
-    }
+        </BrowserRouter>
+    )
 }
 
 export default App;
