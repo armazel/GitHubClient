@@ -4,6 +4,7 @@
       "jsx": "react",
       "declaration": true,
       "lib": ["es6"],
+      "target": "es6",
       "module": "commonjs",
       "noFallthroughCasesInSwitch": true,
       "noImplicitThis": true,
@@ -14,6 +15,7 @@
       "sourceMap": true,
       "strict": true,
       "allowSyntheticDefaultImports": true,
+      "moduleResolution": "node",
       
   },
   "exclude": [
