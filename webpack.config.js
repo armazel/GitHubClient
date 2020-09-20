@@ -31,10 +31,7 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'tslint-loader',
                 options: {
-                    fix: true,
-                    emitError: true,
-                    failOnError: true,
-                    failOnWarning: true,
+                   
                 },
             },
             {
