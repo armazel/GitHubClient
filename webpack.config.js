@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CracoLessPlugin = require("craco-less");
 
 module.exports = {
     entry: "./src/index.js",
@@ -38,21 +39,22 @@ module.exports = {
                 test: /\.less$/,
                 use: [
                   {
-                    loader: "style-loader"
+                    loader: 'style-loader',
                   },
                   {
-                    loader: "css-loader",
+                    loader: 'css-loader',
+                  },
+                  {
+                    loader: 'less-loader',
                     options: {
-                      sourceMap: true,
-                      modules: true,
-                      localIdentName: "[local]___[hash:base64:5]"
-                    }
+                      lessOptions: {
+                        strictMath: true,
+                      },
+                    },
                   },
-                  {
-                    loader: "less-loader"
-                  }
-                ]
-              }
+                ],
+              },
+            
         ],
     },
     resolve: {
@@ -61,6 +63,10 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/index.html"
-        })
+        }),
+        {
+            plugin: CracoLessPlugin,
+            
+          }
     ]
 }

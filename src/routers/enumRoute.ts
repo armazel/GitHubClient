@@ -1,5 +1,5 @@
 export const enum RoutesName {
-    // authorzations pages
+    // authorizations pages
     Auth = "/auth",
     Login = "/login",
 
